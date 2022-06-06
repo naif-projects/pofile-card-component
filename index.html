@@ -4,35 +4,100 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="challenge for front end mentor">
+    <meta name="description" content="challenge for front end mentor" />
 
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- page title -->
-    <title> </title>
+    <title>Profile card component</title>
   </head>
 
-  <body>
-    <!-- footer -->
-    <footer class="py-6 text-center">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded with <span class="text-red-500 font-serif"> ❤ </span>
-      by
-      <a
-        href="https://github.com/naif-projects"
-        class="underline underline-offset-2 text-lg"
-        >Naif Sameer</a
-      >.
-    </footer>
+  <body
+    class="p-4 bg-secondary-base text-gray-200 font-primary overflow-x-hidden"
+  >
+    <main class="flex justify-center items-center min-h-screen">
+      <!-- card -->
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <!-- card content -->
+        <div class="relative z-20">
+          <!-- card header bg -->
+          <header>
+            <img src="assets/bg-pattern-card.svg" alt="card pattern" />
+          </header>
 
+          <!-- card body -->
+          <section class="bg-white">
+            <!-- user avatar -->
+            <div class="flex justify-center -mt-10">
+              <img
+                class="rounded-full border-4 border-white"
+                src="assets/image-victor.jpg"
+                alt="user avatar"
+                width="80"
+                height="80"
+              />
+            </div>
+
+            <!-- title -->
+            <div class="text-center mt-4">
+              <h1 class="text-primary-dark font-primary font-bold text-lg">
+                Victor Crest
+                <span class="text-primary-light font-normal"> 26 </span>
+              </h1>
+            </div>
+
+            <!-- city -->
+            <div class="text-center">
+              <span class="text-primary-base text-sm"> London </span>
+            </div>
+
+            <!-- user info -->
+            <footer
+              class="mt-6 text-primary-dark border-t border-primary-light/30 flex justify-between py-8 px-12 text-center"
+            >
+              <div class="flex flex-col">
+                <span class="font-bold text-xl"> 80K </span>
+                <span class="text-xs text-primary-light"> Followers </span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="font-bold text-xl"> 803K </span>
+                <span class="text-xs text-primary-light"> Likes </span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="font-bold text-xl"> 1.4K </span>
+                <span class="text-xs text-primary-light"> Photos </span>
+              </div>
+            </footer>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div class="flex justify-center">
+      <footer
+        class="py-6 text-center bg-white rounded-lg text-primary-dark inline-block px-4"
+      >
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded with <span class="text-red-500 font-serif"> ❤ </span>
+        by
+        <a
+          href="https://github.com/naif-projects"
+          class="underline underline-offset-2 text-lg"
+          >Naif Sameer</a
+        >.
+      </footer>
+    </div>
     <!-- scripts -->
     <script type="module" src="/main.js"></script>
   </body>
